@@ -2,6 +2,19 @@ module.exports = [
 	{
 		inputs: [
 			{
+				internalType: "uint256",
+				name: "amount",
+				type: "uint256",
+			},
+		],
+		name: "deposit",
+		outputs: [],
+		stateMutability: "nonpayable",
+		type: "function",
+	},
+	{
+		inputs: [
+			{
 				internalType: "address",
 				name: "_token",
 				type: "address",
@@ -102,6 +115,19 @@ module.exports = [
 		name: "WithDraw",
 		outputs: [],
 		stateMutability: "nonpayable",
+		type: "function",
+	},
+	{
+		inputs: [],
+		name: "_Token",
+		outputs: [
+			{
+				internalType: "contract IERC20",
+				name: "",
+				type: "address",
+			},
+		],
+		stateMutability: "view",
 		type: "function",
 	},
 	{
